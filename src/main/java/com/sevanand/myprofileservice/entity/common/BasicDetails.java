@@ -2,16 +2,19 @@ package com.sevanand.myprofileservice.entity.common;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Service;
+
 /**
  * @author arsenal {@summary}@ Basic Detail for portfolio,which gives the
  *         identity
  *
  */
+@Service
 public class BasicDetails {
 	private String firstName;
 	private String lastName;
 	private Date dob;
-
+	
 	public BasicDetails(String firstName, String lastName, Date date) {
 		super();
 		this.firstName = firstName;
@@ -29,18 +32,6 @@ public class BasicDetails {
 
 	public String getLastName() {
 		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public Date getDob() {
-		return dob;
-	}
-
-	public void setDob(Date dob) {
-		this.dob = dob;
 	}
 
 	@Override

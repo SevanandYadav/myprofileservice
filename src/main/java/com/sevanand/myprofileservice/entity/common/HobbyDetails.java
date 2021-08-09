@@ -7,5 +7,19 @@ import java.util.HashMap;
  *         hobby is book which all books read and few line of descriptions
  */
 public class HobbyDetails {
-private HashMap<String,String> hobbiesDetails;
+	private HashMap<String, String> hobbiesDetails;
+
+	public HobbyDetails(HashMap<String, String> hobbiesDetails) {
+		super();
+		this.hobbiesDetails = hobbiesDetails;
+	}
+
+	public HashMap<String, String> getHobbiesDetails() {
+		return hobbiesDetails;
+	}
+
+	public void setHobbiesDetails(HashMap<String, String> hobbiesDetails) {
+		this.hobbiesDetails = hobbiesDetails;
+	}
+
 }

@@ -1,6 +1,6 @@
 package com.sevanand.myprofileservice.entity.acedemics;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class AcademicsDetails {
 	private String educationLevel;

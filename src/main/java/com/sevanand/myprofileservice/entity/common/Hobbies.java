@@ -8,4 +8,9 @@ import java.util.HashMap;
 public class Hobbies {
 	private HashMap<String, HobbyDetails> hobbies;
 
+	public Hobbies(HashMap<String, HobbyDetails> hobbies) {
+		super();
+		this.hobbies = hobbies;
+	}
+
 }

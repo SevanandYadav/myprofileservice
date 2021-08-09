@@ -4,14 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sevanand.myprofileservice.dao.MyProfileDao;
-import com.sevanand.myprofileservice.entity.common.BasicDetails;
+import com.sevanand.myprofileservice.entity.Profile;
 
 @Service
 public class MyProfileService {
 	@Autowired
 	private MyProfileDao dao;
 
-	public BasicDetails getProfile() {
-		return dao.getProfileDetails();
+	public Profile getProfile() {
+		//Some busiess computation
+	 return dao.getProfileDetails();
 	}
 }
