@@ -1,8 +1,8 @@
-package com.sevanand.myprofileservice.entity;
+package com.sevanand.myprofileservice.entity.common;
 
 import java.util.HashMap;
 
-public class CotactDetails {
+public class ContactDetails {
 	private String mobileNumber;
 	private String emailId;
 	private String linkedinHandle;

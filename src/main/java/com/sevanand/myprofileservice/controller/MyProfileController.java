@@ -7,18 +7,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sevanand.myprofileservice.entity.common.BasicDetails;
 import com.sevanand.myprofileservice.service.MyProfileService;
 
 @RestController
 public class MyProfileController {
 	@Autowired
 	private MyProfileService service;
+
 	@GetMapping("/portfolio")
-	public String getProfile() {
-		return Response
-				.//ok().entity(Entity.json(result)).build();
-		service.getProfile();
-		return "jdon Data";
+	public BasicDetails getProfile() {
+		return service.getProfile();
+
 	}
 
 	@PostMapping("/portfolio/experience")

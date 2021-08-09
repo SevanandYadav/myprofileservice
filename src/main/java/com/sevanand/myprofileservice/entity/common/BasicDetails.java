@@ -1,16 +1,23 @@
-package com.sevanand.myprofileservice.entity;
+package com.sevanand.myprofileservice.entity.common;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
- * @author arsenal
- * {@summary}@ Basic Detail for portfolio,which gives the identity
+ * @author arsenal {@summary}@ Basic Detail for portfolio,which gives the
+ *         identity
  *
  */
 public class BasicDetails {
 	private String firstName;
 	private String lastName;
 	private Date dob;
+
+	public BasicDetails(String firstName, String lastName, Date date) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.dob = date;
+	}
 
 	public String getFirstName() {
 		return firstName;
@@ -40,6 +47,5 @@ public class BasicDetails {
 	public String toString() {
 		return "BasicDetails [firstName=" + firstName + ", lastName=" + lastName + ", dob=" + dob + "]";
 	}
-	
 
 }
