@@ -31,3 +31,9 @@
 ### Who do I talk to? ###
 
 * Repo Owner: https://linkedln.com/in/sevanand-yadav
+
+
+### ISSUES-RESOLUTION  ###
+* Autowired searches for default constructor
+* JSON serialization needs to have public getters/setters
+* 

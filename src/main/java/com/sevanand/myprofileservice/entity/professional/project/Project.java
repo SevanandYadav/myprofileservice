@@ -12,4 +12,28 @@ public class Project {
 		this.skills = skills;
 	}
 
+	public String getProjName() {
+		return projName;
+	}
+
+	public void setProjName(String projName) {
+		this.projName = projName;
+	}
+
+	public String getProjDesc() {
+		return projDesc;
+	}
+
+	public void setProjDesc(String projDesc) {
+		this.projDesc = projDesc;
+	}
+
+	public Skill getSkills() {
+		return skills;
+	}
+
+	public void setSkills(Skill skills) {
+		this.skills = skills;
+	}
+
 }

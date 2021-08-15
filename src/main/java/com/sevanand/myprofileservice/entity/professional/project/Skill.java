@@ -9,4 +9,12 @@ public class Skill {
 		this.techSkills = techSkills;
 	}
 
+	public TechnicalSkill getTechSkills() {
+		return techSkills;
+	}
+
+	public void setTechSkills(TechnicalSkill techSkills) {
+		this.techSkills = techSkills;
+	}
+
 }

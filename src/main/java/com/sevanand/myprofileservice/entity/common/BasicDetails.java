@@ -2,6 +2,7 @@ package com.sevanand.myprofileservice.entity.common;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,12 +10,13 @@ import org.springframework.stereotype.Service;
  *         identity
  *
  */
-@Service
+@Component
 public class BasicDetails {
 	private String firstName;
 	private String lastName;
 	private Date dob;
 	
+	public BasicDetails() {}
 	public BasicDetails(String firstName, String lastName, Date date) {
 		super();
 		this.firstName = firstName;

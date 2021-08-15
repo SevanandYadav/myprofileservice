@@ -23,68 +23,47 @@ import com.sevanand.myprofileservice.utils.ProfileContants;
 
 /**
  * @author arsenal
- * @summary Profile Class represents the portfolio, it uses builder-pattern to build different parts of portfolio
- * @problem faced - return a complex object [using autowired -which requires the default constructir
+ * @summary Profile Class represents the portfolio, it uses builder-pattern to
+ *          build different parts of portfolio
+ * @problem faced - return a complex object [using autowired -which requires the
+ *          default constructir
  */
-@Service
+//@Service
 public class Profile {
-	//SOmehow return the Object even if build by buidler check how to retrun
-	private static Profile profileResult;
-	static private HashMap<String, String> programmingPlatformMap = new HashMap<String, String>();
-	static private HashMap<String, HobbyDetails> hobbies;
-	static private HashMap<String, String> hobbiesDetails;
-	static private List<AcademicsDetails> academicsDetails;
-	static private HashMap<String, String> coreLanguageUtilization;
-	static private HashMap<String, String> frameworkUtilization;
-	private TechnicalSkill techSkills;
-	private Skill skills;
-	static private List<Project> projects;
-	static private Organisation organisation;
-	static private HashMap<Integer, Organisation> workExperience;
-	String fName="Sevanand";
-	
+	private BasicDetails basicDetails;
+	private ContactDetails contactDetails;
+	private Hobbies myhobbies;
+	private Academics acad;
+	private ProfessionalDetails professionalDetails;
 
-	static {
-		programmingPlatformMap.put("github", "something.github.com");
-		hobbiesDetails.put("7 Habits of highly effective people", "Author:Steven carvey");
-		hobbiesDetails.put("God Of Small Things", "Author:Arundhati Roy");
-		hobbies.put("Reading Books", new HobbyDetails(hobbiesDetails));
-		academicsDetails.add(new AcademicsDetails("10th", "APS", new Date(2009, 05, 18), new Date(2010, 05, 18), 80));
-		
-		coreLanguageUtilization.put("Java-8", "Component");
-		coreLanguageUtilization.put("React", "My-Profile");
-		coreLanguageUtilization.put("AWS", "My-Profile");
-		frameworkUtilization.put("Springboot", "PetProject");
-		Skill skills = new Skill(new TechnicalSkill(coreLanguageUtilization, frameworkUtilization));
-		projects.add(new Project("Live Sttreaming", "Deleveing Videos live", skills));
-		organisation = new Organisation("Cybage", String.valueOf(ProfileContants.ORG_TYPE_SERVICE), projects);
-		workExperience.put(1, organisation);
-
-	}
-
-	private BasicDetails basicDetails = new BasicDetails(fName, "Yadav", new Date(1994, 01, 18));
-	// TODO: it can be buider pattern
-	private ContactDetails contactDetails = new ContactDetails("9140153684", "sevanandyadav@gmail.com",
-			"https://linkedin.com/in/sevanand-yadav", programmingPlatformMap);
-	private Hobbies myhobbies = new Hobbies(hobbies);
-	private Academics acad = new Academics(academicsDetails);
-	private  ProfessionalDetails professionalDetails = new ProfessionalDetails(4,workExperience);
-	
 	public Profile(BasicDetails basicDetails, ContactDetails contactDetails, Hobbies myhobbies, Academics acad,
 			ProfessionalDetails professionalDetails) {
 		super();
-		profileResult.basicDetails = basicDetails;
-		profileResult.contactDetails = contactDetails;
-		profileResult.myhobbies = myhobbies;
-		profileResult.acad = acad;
-		profileResult.professionalDetails = professionalDetails;
+		this.basicDetails = basicDetails;
+		this.contactDetails = contactDetails;
+		this.myhobbies = myhobbies;
+		this.acad = acad;
+		this.professionalDetails = professionalDetails;
 	}
 
-	
+	public BasicDetails getBasicDetails() {
+		return basicDetails;
+	}
 
-	public  static Profile getProfile() {
-		return profileResult;
+	public ContactDetails getContactDetails() {
+		return contactDetails;
+	}
 
+	public Hobbies getMyhobbies() {
+		return myhobbies;
+	}
+
+	public Academics getAcad() {
+		return acad;
+	}
+
+	public ProfessionalDetails getProfessionalDetails() {
+		return professionalDetails;
 	}
 
 }

@@ -14,5 +14,23 @@ public Organisation(String orgName, String orgType, List<Project> projects) {
 	this.orgType = orgType;
 	this.projects = projects;
 }
+public String getOrgName() {
+	return orgName;
+}
+public void setOrgName(String orgName) {
+	this.orgName = orgName;
+}
+public String getOrgType() {
+	return orgType;
+}
+public void setOrgType(String orgType) {
+	this.orgType = orgType;
+}
+public List<Project> getProjects() {
+	return projects;
+}
+public void setProjects(List<Project> projects) {
+	this.projects = projects;
+}
 
 }

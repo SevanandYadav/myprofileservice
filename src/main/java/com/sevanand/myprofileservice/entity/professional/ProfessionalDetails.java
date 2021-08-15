@@ -15,4 +15,20 @@ public class ProfessionalDetails {
 		this.workExperience = workExperience;
 	}
 
+	public int getTotalExperience() {
+		return totalExperience;
+	}
+
+	public void setTotalExperience(int totalExperience) {
+		this.totalExperience = totalExperience;
+	}
+
+	public HashMap<Integer, Organisation> getWorkExperience() {
+		return workExperience;
+	}
+
+	public void setWorkExperience(HashMap<Integer, Organisation> workExperience) {
+		this.workExperience = workExperience;
+	}
+
 }

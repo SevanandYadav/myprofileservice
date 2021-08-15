@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 import com.sevanand.myprofileservice.dao.MyProfileDao;
 import com.sevanand.myprofileservice.entity.Profile;
 
-@Service
+//@Service
 public class MyProfileService {
-	@Autowired
-	private MyProfileDao dao;
+	//@Autowired
+	private MyProfileDao dao=new MyProfileDao();
 
 	public Profile getProfile() {
 		//Some busiess computation

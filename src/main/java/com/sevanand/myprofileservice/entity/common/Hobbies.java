@@ -13,4 +13,12 @@ public class Hobbies {
 		this.hobbies = hobbies;
 	}
 
+	public HashMap<String, HobbyDetails> getHobbies() {
+		return hobbies;
+	}
+
+	public void setHobbies(HashMap<String, HobbyDetails> hobbies) {
+		this.hobbies = hobbies;
+	}
+
 }
