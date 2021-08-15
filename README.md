@@ -37,3 +37,7 @@
 * Autowired searches for default constructor
 * JSON serialization needs to have public getters/setters
 * 
+### H2 TROUBLESHOOT  ###
+* Just enbaled conosle from property andother kept commented it showd
+* JSON serialization needs to have public getters/setters
+* 
