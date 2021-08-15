@@ -3,7 +3,7 @@
 
 ### What is this repository for? ###
 
-* Restful service that return the json-data of portfolio
+* Restful service that return the JOSN-data of portfolio
 * end-point : [GET]/portfolio
 
 ### How do I get set up? ###
@@ -15,8 +15,9 @@
 * [How to run tests]
 * [Deployment instructions]
 
-### Technologies-used ###
+### Technologies/Techniques Used-used ###
 * Java-8
+* Design Pattern - Builder Design Pattern
 * Springboot
 * TBD[JPA/H2-DB ]
 * TBD[Caching]

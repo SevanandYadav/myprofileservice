@@ -21,6 +21,11 @@ import com.sevanand.myprofileservice.entity.professional.project.Skill;
 import com.sevanand.myprofileservice.entity.professional.project.TechnicalSkill;
 import com.sevanand.myprofileservice.utils.ProfileContants;
 
+/**
+ * @author arsenal
+ * @summary Profile Class represents the portfolio, it uses builder-pattern to build different parts of portfolio
+ * @problem faced - return a complex object [using autowired -which requires the default constructir
+ */
 @Service
 public class Profile {
 	//SOmehow return the Object even if build by buidler check how to retrun
