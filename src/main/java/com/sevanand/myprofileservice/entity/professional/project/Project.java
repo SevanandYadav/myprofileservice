@@ -1,10 +1,13 @@
 package com.sevanand.myprofileservice.entity.professional.project;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Project {
 	private String projName;
 	private String projDesc;
 	private Skill skills;
-
+	Project(){}
 	public Project(String projName, String projDesc, Skill skills) {
 		super();
 		this.projName = projName;

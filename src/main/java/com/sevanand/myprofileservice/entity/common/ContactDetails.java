@@ -2,12 +2,17 @@ package com.sevanand.myprofileservice.entity.common;
 
 import java.util.HashMap;
 
+import javax.persistence.Entity;
+
+import org.springframework.stereotype.Component;
+@Component
 public class ContactDetails {
 	private String mobileNumber;
 	private String emailId;
 	private String linkedinHandle;
 	private HashMap<String, String> programmingPlatformHandles;
 	//TODO: setter can be removed
+	ContactDetails(){}
 	
 	public ContactDetails(String mobileNumber, String emailId, String linkedinHandle,
 			HashMap<String, String> programmingPlatformHandles) {

@@ -6,7 +6,7 @@
 * Restful service that return the JOSN-data of portfolio
 * end-point : [GET]/portfolio
 
-### How do I get set up? ###
+### How do I get set up locally? ###
 * Clone the repository
 * Start the java application
 * Others[TBD]
@@ -14,6 +14,12 @@
 * [Database configuration]
 * [How to run tests]
 * [Deployment instructions]
+
+### How do start locally? ###
+* Run applicatoin from MyProfileServiceApplication 
+* Start the java application
+*endpoint- 
+*[GET] localhost:8080/portfolio
 
 ### Technologies/Techniques Used-used ###
 * Java-8

@@ -2,9 +2,13 @@ package com.sevanand.myprofileservice.entity.professional.project;
 
 import java.util.HashMap;
 
+import org.springframework.stereotype.Component;
+@Component
 public class TechnicalSkill {
 	HashMap<String, String> coreLanguageUtilization;
 	HashMap<String, String> frameworkUtilization;
+	
+	TechnicalSkill(){}
 
 	public TechnicalSkill(HashMap<String, String> coreLanguageUtilization,
 			HashMap<String, String> frameworkUtilization) {

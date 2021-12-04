@@ -3,11 +3,15 @@ package com.sevanand.myprofileservice.entity.professional;
 import java.time.Duration;
 import java.util.HashMap;
 
-import com.sevanand.myprofileservice.entity.professional.organisation.Organisation;
+import org.springframework.stereotype.Component;
 
+import com.sevanand.myprofileservice.entity.professional.organisation.Organisation;
+@Component
 public class ProfessionalDetails {
 	private int totalExperience;
 	private HashMap<Integer, Organisation> workExperience;
+	
+	ProfessionalDetails(){}
 
 	public ProfessionalDetails(int totalExperience, HashMap<Integer, Organisation> workExperience) {
 		super();

@@ -21,7 +21,7 @@ import com.sevanand.myprofileservice.entity.professional.project.Skill;
 import com.sevanand.myprofileservice.entity.professional.project.TechnicalSkill;
 import com.sevanand.myprofileservice.utils.ProfileContants;
 
-//@Component
+@Component
 public class MyProfileDao {
 
 	private Profile profileResult;

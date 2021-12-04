@@ -14,12 +14,13 @@ import com.sevanand.myprofileservice.service.MyProfileService;
 @RestController
 public class MyProfileController {
 //TODO:remove new and replace it with Autowired
-	//@Autowired
+	@Autowired
 	private MyProfileService myProfileService;
 
 	@GetMapping("/portfolio")
 	public Profile getProfile() {
-		return new MyProfileService().getProfile();
+	//	return new MyProfileService().getProfile();
+		return myProfileService.getProfile();
 
 	}
 

@@ -2,12 +2,16 @@ package com.sevanand.myprofileservice.entity.acedemics;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+@Component
 public class AcademicsDetails {
 	private String educationLevel;
 	private String educationInstitute;
 	private Date fromDate;
 	private Date toDate;
 	private int resultPercentage;
+	//Default contructor TO provide autowiring 
+	AcademicsDetails(){}
 
 	public AcademicsDetails(String educationLevel, String educationInstitute, Date fromDate, Date toDate,
 			int resultPercentage) {

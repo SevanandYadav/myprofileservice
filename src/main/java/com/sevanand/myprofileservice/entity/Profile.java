@@ -28,7 +28,7 @@ import com.sevanand.myprofileservice.utils.ProfileContants;
  * @problem faced - return a complex object [using autowired -which requires the
  *          default constructir
  */
-//@Service
+@Service
 public class Profile {
 	private BasicDetails basicDetails;
 	private ContactDetails contactDetails;
