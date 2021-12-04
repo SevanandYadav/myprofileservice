@@ -9,10 +9,10 @@ import com.sevanand.myprofileservice.entity.Profile;
 @Service
 public class MyProfileService {
 	@Autowired
-	private MyProfileDao dao;//=new MyProfileDao();
+	private MyProfileDao dao;
 
 	public Profile getProfile() {
-		//Some busiess computation
-	 return dao.getProfileDetails();
+
+		return dao.getProfileDetails();
 	}
 }

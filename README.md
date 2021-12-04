@@ -20,6 +20,7 @@
 * Start the java application
 *endpoint- 
 *[GET] localhost:8080/portfolio
+*[GET] localhost:8080/portfolios for view page
 
 ### Technologies/Techniques Used-used ###
 * Java-8

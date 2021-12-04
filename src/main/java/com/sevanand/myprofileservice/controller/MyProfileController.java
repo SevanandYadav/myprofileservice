@@ -13,7 +13,7 @@ import com.sevanand.myprofileservice.service.MyProfileService;
 
 @RestController
 public class MyProfileController {
-//TODO:remove new and replace it with Autowired
+
 	@Autowired
 	private MyProfileService myProfileService;
 
