@@ -6,7 +6,7 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class MyProfileServiceApplication {
+public class MyProfileServiceApplication extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyProfileServiceApplication.class, args);
